@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>AspNetCore.GraphHelper.AzureAD</id>
+        <version>1.0.0</version>
+        <authors>Singtone Contributors</authors>
+		<language>en-US</language>
+		<license type="expression">MIT</license>
+		<repository type="git" url="https://github.com/trueseason/aspnetcore-graphhelper-azuread.git" />
+		<description>A Azure AD authentication helper to retrieve the user groups.</description>
+		<dependencies>
+			<group targetFramework="netcoreapp3.1">
+				<dependency id="Microsoft.AspNetCore.Authentication.OpenIdConnect" version="3.1.16" />
+				<dependency id="Microsoft.Graph" version="3.35.0" />
+			</group>
+		</dependencies>
+    </metadata>
+	<files>
+		<file src="AspNetCore.GraphHelper.AzureAD*.dll" target="lib\netcoreapp3.1" />
+	</files>
+</package>

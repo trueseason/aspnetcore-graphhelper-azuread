@@ -1,0 +1,10 @@
+name: $(BuildDefinitionName)_$(SourceBranchName)_$(date:yyyyMMdd)$(rev:.r)
+
+resources:
+  repositories:
+    - repository: BuildPipelines
+      type: git
+      name: "Utilities/PipelineTemplates"
+
+extends:
+  template: Azure/NetCoreNuGetLibrary.yml@BuildPipelines
